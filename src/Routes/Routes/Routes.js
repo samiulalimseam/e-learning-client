@@ -9,6 +9,7 @@ import NotFound from "../../Pages/NotFound/NotFound";
 import Account from "../../Pages/User/Account";
 import Login from "../../Pages/User/Login";
 import SignUp from "../../Pages/User/SignUp";
+import PrivateRoutes from "./PrivateRoutes";
 
 const routes = createBrowserRouter([
     {
@@ -29,8 +30,9 @@ const routes = createBrowserRouter([
             },
             {
                 path:'/account',
-                element: <Account></Account>
+                element: <PrivateRoutes> <Account></Account> </PrivateRoutes>
             },
+
             {
                 path: '/category',
                 

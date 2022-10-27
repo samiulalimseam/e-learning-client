@@ -8,8 +8,12 @@ import './Header.css';
 import logo from '../Header/logotp.png';
 import { Link } from 'react-router-dom';
 import searchIcon from './dodge.png';
+import { useContext } from 'react';
+import { AuthContext } from '../../../context/UserContext';
 
 function Header() {
+  const {user} = useContext(AuthContext);
+console.log(user);
   return (
     <Navbar className='shadow header-section sticky-top'  bg="white" expand="lg">
       <Container className=' ' >
@@ -25,12 +29,16 @@ function Header() {
             <Link className='link'  to={'/category'} > Explore </Link>
             <Link className='link'  to={'/blog'} > Blog</Link>
             <Link className='link'  to={'*'} > About</Link>
+            <Link className='link'  to={'/login'} > Login</Link>
+            <Link className='link'  to={'/account'} > Account</Link>
+            <button className='btn btn-primary ' >Dark/ Light</button>
           </Nav>
           <div className="wrap2">
     <div className="search2">
       <input type="search" placeholder='What do you want to learn?' className="searchTerm2" />
       <button type="submit" className="searchButton2"><img className='search-icon2' src={searchIcon} alt="" /> </button>
-        
+      {user?.displayName && <span className='link'>{user.displayName}</span>}
+
    </div>
         </div> 
         </Navbar.Collapse>

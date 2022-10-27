@@ -1,21 +1,35 @@
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import React from 'react';
+import { useContext } from 'react';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../context/UserContext';
 
 
 const SignUp = () => {
+    const {createUser} = useContext(AuthContext);
+    const navigate = useNavigate()
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [error, setError] = useState('')
 
-    const handleSubmit = async (e)=>{
+    const handleSubmit = (e)=>{
         e.preventDefault();
         const form = e.target;
         const name = form.name.value;
         const email = form.email.value;
         const password = form.password.value;
         console.log(email,password)
+
+        createUser(email,password)
+        .then(result => {
+            const user = result.user;
+            navigate('/')
+            console.log(user);
+        })
+        .catch( error =>{
+            console.log(error);
+        })
 
         
     }
@@ -39,7 +53,7 @@ const SignUp = () => {
                     <input name='password' type="password" />
 
                 </div>
-                <button>Sign Up</button>
+                <button className='btn btn-primary'>Sign Up</button>
             </form>
             <p>Already Have an Account ? <Link to={`/login`} >Login</Link> </p>
         </div>

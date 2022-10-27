@@ -1,23 +1,50 @@
 import React from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../context/UserContext';
 
 const Login = () => {
+    const {login,loginWithGoogle} = useContext(AuthContext)
+    const handleOnSubmit = (e) =>{
+        e.preventDefault();
+        const form = e.target;
+        const email = form.email.value;  
+        const password = form.password.value;
+        login(email,password)
+        .then(result =>{
+            console.log(result)
+            form.reset()
+        }) 
+        .catch(error =>{
+            console.error(error);
+        })
+    }
+    const handleGoogleSignIn = ()=>{
+        loginWithGoogle()
+        .then(result=>{
+            const user = result.user;
+            console.log(user);
+        })
+        .catch(error=> console.error(error))
+    }
+
     return (
         <div className='container mt-5'>
             <h1>Log In to you Account</h1>
-            <form>
+            <form onSubmit={handleOnSubmit}>
                 <div>
                     <label >Email</label>
-                    <input type="email" />
+                    <input name='email' type="email" />
                     
                 </div>
                 <div>
                     <label >Password</label>
-                    <input type="password" />
+                    <input name='password' type="password" />
 
                 </div>
-                <button>Login</button>
+                <button className='btn btn-primary'>Login</button>
             </form>
+            <button onClick={handleGoogleSignIn} className='btn btn-success mt-2'>Sign in with Google</button>
             <p>Dont have and account ? <Link to={`/signup`} >Signup</Link> </p>
         </div>
     );
