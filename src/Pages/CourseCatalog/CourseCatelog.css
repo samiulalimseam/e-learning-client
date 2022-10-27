@@ -1,0 +1,4 @@
+.course-catelog{
+    display: grid;
+    grid-template-columns: repeat(3,390px);
+}

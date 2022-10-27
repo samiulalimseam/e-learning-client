@@ -1,0 +1,21 @@
+.topic-card{
+    text-decoration: none;
+    color: black;
+    height: 150px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f1f3f8;
+    margin: 5px;
+    transition-duration: 0.3s;
+}
+.topic-card:hover{
+    color: white;
+    background-color:#0072dd ;
+    cursor: pointer;
+}
+.topic-card h3{
+    font-size: larger;
+}
+.topic-image img{
+    width: 30px;
+}

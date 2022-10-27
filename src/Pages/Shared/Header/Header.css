@@ -1,0 +1,61 @@
+.header-section{
+    margin: 0;
+    background-color: white;
+    
+    
+}
+.logo{
+    width: 160px;
+}
+.link{
+    font-weight:400 ;
+    color: black;
+    text-decoration:none ;
+    margin:  5px;
+}
+.search2 {
+    width: 100%;
+    
+    display: flex;
+  }
+  
+  .searchTerm2 {
+    width: 100%;
+    border: 2px solid #3b6ed1;
+    border-right: none;
+    padding: 5px;
+    height: auto;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm2:focus{
+    color: #3b6ed1;
+  }
+  
+  .searchButton2 {
+    width: 40px;
+    height: auto;
+    border: 1px solid #3b6ed1;
+    background: #3b6ed1;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap2{
+    width: 300px;
+    
+   
+  }
+  .search-icon2{
+    display: flex;
+    justify-content: center;
+    width: 25px;
+    
+  }
+  

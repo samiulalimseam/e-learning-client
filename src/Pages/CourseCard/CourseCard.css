@@ -1,0 +1,15 @@
+.course-card{
+    width: 350px;
+    height: 420px;
+    background-color: rgb(244, 244, 244);
+    margin: 10px auto;
+    border-radius: 0 0 10px 10px;
+    
+}
+.course-card img{
+    width: 350px;
+    border-radius: 10px 10px 0 0;
+}
+.course-caption{
+    padding: 10px;
+}
