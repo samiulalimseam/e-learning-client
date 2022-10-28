@@ -1,5 +1,18 @@
 # Getting Started with Create React App
 
+
+#Features
+* Used React
+* Used React Router Dom
+* Used React Icons
+* Used Private Route
+* Used React Hooks
+* Used Bootstrap
+* Runs On Express JS
+* Firebase Authentication System
+* Google Sign in
+* Github Sign in
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

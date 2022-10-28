@@ -35,7 +35,6 @@ console.log(user);
             <Link className='link'  to={'/category'} > Explore </Link>
             <Link className='link'  to={'/blog'} > Blog</Link>
             <Link className='link'  to={'/faq'} > FAQ</Link>
-            <Link className='link'  to={'*'} > About</Link>
            
             
           </Nav>

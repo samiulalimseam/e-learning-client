@@ -16,6 +16,9 @@ const Category = () => {
   },[])
     return (
         <div>
+          <div className="blogs bg-primary text-light fw-light">
+                <h1 className='fw-light text-center p-5'>Explore Course Categories</h1>
+            </div>
            <div className="show-case container">
 
             {
