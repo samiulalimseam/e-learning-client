@@ -64,7 +64,6 @@ function Home() {
 
     </div>
     <div className="categories-section container mt-2 ">
-    <h3>Top Categories</h3>
     <div className="">
 
     <Category></Category>
