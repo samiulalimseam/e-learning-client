@@ -1,0 +1,17 @@
+.cart-card{
+    color: black;
+    background-color: #fcfcfc;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    margin: auto;
+
+
+}
+.card-parent{
+    margin: auto;
+    margin-bottom: 20px;
+}
+.banner{
+    background-color:#0072dd ;
+}

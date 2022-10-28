@@ -1,6 +1,6 @@
 import React from 'react';
 import{AiFillFilePdf} from 'react-icons/ai';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import Pdf from 'react-to-pdf';
 import './Course.css';
 
@@ -55,9 +55,9 @@ const Course = () => {
             </div>
             <div className=' container course-caption'>
             <Pdf  options={options} x={0} y={0} scale={0.2} targetRef={ref} filename="course.pdf">
-        {({ toPdf }) => <button className='btn btn-outline-light' onClick={toPdf}><AiFillFilePdf /> </button>}
+        {({ toPdf }) => <button className='ms-5 btn btn-outline-light' onClick={toPdf}>PDF </button>}
       </Pdf>
-
+        <Link to={`/cart/${course.id}`} className="btn btn-primary ms-3">Get Premium Access</Link>
             </div>
                 </div>
                 <div className="details container mt-5">

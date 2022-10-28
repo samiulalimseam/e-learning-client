@@ -1,3 +1,26 @@
+.profile-btn-text{
+  text-decoration: none;
+}
+.toggle-theme{
+  font-size: 20px;
+  color: #0072dd;
+  padding: 10px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  
+
+}
+.toggle-theme:hover{
+  cursor:pointer
+}
+.profile-icon{
+  font-size:xx-large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0072dd;
+}
 .header-section{
     margin: 0;
     background-color: white;
@@ -29,7 +52,11 @@
     outline: none;
     color: #9DBFAF;
   }
-  
+  .profile-photo{
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid royalblue;
+  }
   .searchTerm2:focus{
     color: #3b6ed1;
   }

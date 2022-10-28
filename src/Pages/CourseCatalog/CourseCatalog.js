@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { categories } from '../../fakeDb/fk';
 import CourseCard from '../CourseCard/CourseCard';
 import './CourseCatelog.css'
 

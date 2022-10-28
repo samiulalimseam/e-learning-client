@@ -1,0 +1,9 @@
+.account-card{
+    width: 300px;
+    margin: auto;   
+    margin-bottom: 10px; 
+}
+.user-photo{
+    border-radius: 50%;
+    width: 100px;
+}

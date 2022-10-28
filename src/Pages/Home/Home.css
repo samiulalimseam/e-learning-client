@@ -89,9 +89,10 @@ font-weight: 200;
   
 }
 .mid-seperator h3{
-  font-size:large;
+  font-size:larger;
   font-weight: 200;
-  margin-right: 20px;
+  margin-right: 50px;
+  margin-left: 10px;
   
  
   
@@ -170,6 +171,9 @@ font-weight: 200;
       
      
 
+    }
+    .mid-seperator h3{
+      margin-top: 10px;
     }
     .seperator-inner{
       display: flex;
