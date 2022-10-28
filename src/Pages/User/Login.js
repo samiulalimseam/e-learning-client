@@ -45,6 +45,7 @@ const Login = () => {
                 <button className='btn btn-primary'>Login</button>
             </form>
             <button onClick={handleGoogleSignIn} className='btn btn-success mt-2'>Sign in with Google</button>
+            <button onClick={handleGoogleSignIn} className='ms-2 btn btn-success mt-2'>Sign in with Github</button>
             <p>Dont have and account ? <Link to={`/signup`} >Signup</Link> </p>
         </div>
     );

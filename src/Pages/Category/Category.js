@@ -1,19 +1,25 @@
-import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import React, { useState } from 'react';
 import Topic from './Topic';
 import './Category.css';
-import { categories } from '../../fakeDb/fk';
+import { useEffect } from 'react';
 
 const Category = () => {
-    const data = useLoaderData();
-    const catagory = categories;
-  ;
+    
+  const [categories,setCatagories] = useState([])
+  useEffect(()=>{
+      fetch('http://localhost:5000/categories')
+      .then(res=> res.json())
+      .then(data=> {
+        console.log(data);
+        setCatagories(data)
+      });
+  },[])
     return (
         <div>
            <div className="show-case container">
 
             {
-               catagory.map(category => <Topic key={category.id} topic={category} ></Topic>)
+               categories.map(category => <Topic key={category.id} topic={category} ></Topic>)
             }
            </div>
 

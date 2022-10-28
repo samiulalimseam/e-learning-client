@@ -1,0 +1,38 @@
+.part-parent{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.part p{
+    font-weight: 200;
+    padding: 5px;
+    border: 1px solid royalblue;
+   
+    border-radius: 10px;
+    margin: 10px;
+}
+.course-header{
+    
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.course-header img{
+    width: 500px;
+    border-radius: 10px;
+   
+}
+.cover{
+    background-color: #1c1d1f;
+}
+.course-header h6{
+    font-size: xx-large;
+}
+.header-caption{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid royalblue;
+}

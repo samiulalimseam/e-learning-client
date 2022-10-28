@@ -10,9 +10,11 @@ import { Link } from 'react-router-dom';
 import searchIcon from './dodge.png';
 import { useContext } from 'react';
 import { AuthContext } from '../../../context/UserContext';
+import { useState } from 'react';
 
 function Header() {
   const {user} = useContext(AuthContext);
+  
 console.log(user);
   return (
     <Navbar className='shadow header-section sticky-top'  bg="white" expand="lg">
@@ -29,7 +31,7 @@ console.log(user);
             <Link className='link'  to={'/category'} > Explore </Link>
             <Link className='link'  to={'/blog'} > Blog</Link>
             <Link className='link'  to={'*'} > About</Link>
-            <Link className='link'  to={'/login'} > Login</Link>
+           <Link className='link'  to={'/login'} > Login</Link>
             <Link className='link'  to={'/account'} > Account</Link>
             <button className='btn btn-primary ' >Dark/ Light</button>
           </Nav>

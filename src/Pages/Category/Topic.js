@@ -6,7 +6,7 @@ const Topic = ({topic}) => {
     const name = topic.name;
 
     return (
-        <Link className='topic-card d-flex flex-column justify-content-center align-items-center' to={`/category/${topic.id}`}>
+        <Link className='topic-card d-flex flex-column justify-content-center align-items-center' to={`/courses/${topic.id}`}>
         <div >
             <div className="topic-image d-flex align-items-center ">
                 <img className='m-2' src={topic.img} alt="" />

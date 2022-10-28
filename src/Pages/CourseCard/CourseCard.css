@@ -10,6 +10,10 @@
     width: 350px;
     border-radius: 10px 10px 0 0;
 }
+.course-caption h2{
+    font-size: large;
+}
 .course-caption{
+
     padding: 10px;
 }

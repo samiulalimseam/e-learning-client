@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import './CourseCard.css';
 
 const CourseCard = ({course}) => {
-   
+    console.log(course);
     return (
         <div  className='course-card shadow'>
-            <img src='https://www.classcentral.com/report/wp-content/uploads/2020/06/top-100-course-pandemic.png' alt="" />
+            <img src={`${course.image}`} alt="" />
             <div className="course-caption">
             <h2>{course.Name}</h2>
             <p>Level: {course.level}</p>
