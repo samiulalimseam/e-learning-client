@@ -8,7 +8,11 @@
 * Used Private Route
 * Used React Hooks
 * Used Bootstrap
-
+* Runs On Express JS
+* Firebase Authentication System
+* Google Sign in
+* Github Sign in
+* 100% Dynamic Course API
 
 
 
