@@ -8,11 +8,8 @@
 * Used Private Route
 * Used React Hooks
 * Used Bootstrap
-* Runs On Express JS
-* Firebase Authentication System
-* Google Sign in
-* Github Sign in
-* 100% Dynamic Course API
+
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
