@@ -35,7 +35,7 @@ export const UserContext = ({children}) => {
     }
 
     useEffect(()=>{
-       const unsubscribe=  onAuthStateChanged(auth, currentUser =>{
+       const unsubscribe =  onAuthStateChanged(auth, currentUser =>{
             setUser(currentUser);
             setLoading(false)
             console.log('Sate changed ', currentUser);

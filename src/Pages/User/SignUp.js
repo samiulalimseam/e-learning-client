@@ -36,7 +36,7 @@ const SignUp = () => {
             const user = result.user;
             updateUser(profile)
             .then(()=>{console.log('sign up done')})
-        .cath((error)=> console.log(error));
+        .catch((error)=> console.log(error));
             navigate('/')
             console.log(user);
         })

@@ -43,12 +43,12 @@ const routes = createBrowserRouter([
             },
             {
                 path:'/cart/:id',
-                loader: ({params})=> fetch(`http://localhost:5000/course/${params.id}`),
+                loader: ({params})=> fetch(`https://educare-server-eta.vercel.app/course/${params.id}`),
                 element: <PrivateRoutes> <Cart></Cart> </PrivateRoutes>
             },
             {
                 path: '/course/:id' ,
-                loader: ({params})=> fetch(`http://localhost:5000/course/${params.id}`),
+                loader: ({params})=> fetch(`https://educare-server-eta.vercel.app/course/${params.id}`),
                 element: <Course></Course>
             },
             {
@@ -61,7 +61,7 @@ const routes = createBrowserRouter([
             },
             {
                 path:'/courses/:id',
-                loader: ({params})=> fetch(`http://localhost:5000/category/${params.id}`),
+                loader: ({params})=> fetch(`https://educare-server-eta.vercel.app/category/${params.id}`),
                 element: <Courses></Courses>
             },
             {
